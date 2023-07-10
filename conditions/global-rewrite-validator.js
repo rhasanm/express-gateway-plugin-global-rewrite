@@ -26,7 +26,7 @@ module.exports = {
             pathMatched = true;
         }
       }
-      return ipWhitelisted || pathMatched;
+      return ipWhitelisted && pathMatched;
   }
 };
 
