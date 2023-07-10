@@ -6,6 +6,9 @@ module.exports = {
     properties: {
         redirect: {
             type: 'integer'
+        },
+        message: {
+            type: 'string'
         }
     },
     required: ['redirect']
@@ -13,7 +16,7 @@ module.exports = {
   policy: (actionParams) => {
     return (req, res, next) => {
         res.status(actionParams.redirect);
-        res.send();
+        actionParams.message ? res.send(message) : res.send();
     };
   }
 };
