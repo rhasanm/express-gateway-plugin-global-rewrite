@@ -1,5 +1,5 @@
 module.exports = {
-  name: 'ip-whitelist',
+  name: 'global-rewrite',
   schema: {
     $id: "2",
     type: "object",

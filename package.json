@@ -1,5 +1,5 @@
 {
-  "name": "express-gateway-plugin-ip-whitelist",
+  "name": "express-gateway-plugin-global-rewrite",
   "version": "1.0.4",
   "description": "",
   "main": "manifest.js",
