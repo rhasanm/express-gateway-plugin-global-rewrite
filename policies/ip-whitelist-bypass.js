@@ -15,8 +15,9 @@ module.exports = {
   },
   policy: (actionParams) => {
     return (req, res, next) => {
+        const message = actionParams.message;
         res.status(actionParams.redirect);
-        actionParams.message ? res.send(message) : res.send();
+        message ? res.send(message) : res.send();
     };
   }
 };
