@@ -12,7 +12,6 @@ module.exports = {
   },
   handler: conditionConfig => req => {
       const result = conditionConfig['not-in'].includes(req.ip)
-      console.log(req.ip, result)
       return !result
   }
 };
